@@ -10,7 +10,7 @@ console.log(menu)
 
 hamburguer.addEventListener('click', ()=>{
     menu.classList.toggle("spread");
-}) 
+})
 
 window.addEventListener('click' , e=>{
     if(menu.classList.contains('spread') && e.target != hamburguer && e.target != menu  ){
@@ -31,8 +31,14 @@ flecha[1].addEventListener('click', ()=>{
     flechaInterna[1].classList.toggle("flechaDespues");
 })
 
+flecha[3].addEventListener('click', ()=>{
+    sombra[3].classList.toggle("sombraDespues");
+    sombraInterna[3].classList.toggle("sombra-internaDespues");
+    flechaInterna[3].classList.toggle("flechaDespues");
+})
+
 flecha[2].addEventListener('click', ()=>{
-    sombra[2].classList.toggle("sombraDespues");
+    sombra[2].classList.toggle("sombraDespues2");
     sombraInterna[2].classList.toggle("sombra-internaDespues");
     flechaInterna[2].classList.toggle("flechaDespues");
 })
